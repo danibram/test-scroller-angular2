@@ -1,0 +1,80 @@
+.scroll-container {
+    background-color: #161616;
+    position: absolute;
+    overflow: hidden;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.scroll-container.overlay {
+    background: -moz-linear-gradient(
+        left,
+        rgba(22, 22, 22, 1) 0%,
+        rgba(22, 22, 22, 0.6) 40%,
+        rgba(22, 22, 22, 0) 45%,
+        rgba(22, 22, 22, 0) 55%,
+        rgba(22, 22, 22, 0.6) 60%,
+        rgba(22, 22, 22, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+        left,
+        rgba(22, 22, 22, 1) 0%,
+        rgba(22, 22, 22, 0.6) 40%,
+        rgba(22, 22, 22, 0) 45%,
+        rgba(22, 22, 22, 0) 55%,
+        rgba(22, 22, 22, 0.6) 60%,
+        rgba(22, 22, 22, 1) 100%
+    );
+    background: linear-gradient(
+        to right,
+        rgba(22, 22, 22, 1) 0%,
+        rgba(22, 22, 22, 0.6) 40%,
+        rgba(22, 22, 22, 0) 45%,
+        rgba(22, 22, 22, 0) 55%,
+        rgba(22, 22, 22, 0.6) 60%,
+        rgba(22, 22, 22, 1) 100%
+    );
+    background: -o-linear-gradient(
+        to right,
+        rgba(22, 22, 22, 1) 0%,
+        rgba(22, 22, 22, 0.6) 40%,
+        rgba(22, 22, 22, 0) 45%,
+        rgba(22, 22, 22, 0) 55%,
+        rgba(22, 22, 22, 0.6) 60%,
+        rgba(22, 22, 22, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+            startColorstr='#4d000000',
+            endColorstr='#4d000000',
+            GradientType=1
+        );
+    position: relative;
+    pointer-events: none;
+}
+
+.scroll-content {
+    -webkit-transform-origin: left top;
+    -webkit-transform: translateZ(0);
+    -moz-transform-origin: left top;
+    -moz-transform: translateZ(0);
+    -ms-transform-origin: left top;
+    -ms-transform: translateZ(0);
+    -o-transform-origin: left top;
+    -o-transform: translateZ(0);
+    transform-origin: left top;
+    transform: translateZ(0);
+}
+
+.scroll-cell {
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+.scroll-cell.empty {
+    color: transparent;
+}
